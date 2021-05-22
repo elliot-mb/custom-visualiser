@@ -1,0 +1,64 @@
+body {
+  font-size: 17px;
+  font-family: sans-serif;
+  background: #3f4b58;
+  line-height: 1.5em;
+  margin: 0;
+  color:#f0ffff;
+} 
+
+label{
+  float: left;
+  font-size: 1.5em;
+  clear: left;
+  padding-top: 15px;
+  width: 150px;
+  text-align: right;
+}
+
+input {
+  font-size: 1.5em;
+  width: 350px;
+  margin: 10px 0;
+  background-color: #f0ffff;
+  float: left;
+}
+
+#sounds{
+  float: left;
+  width: 125px;
+  border-radius: 20px;
+}
+
+#get_visualiser{
+
+  float: right;
+
+}
+
+h1{
+
+  font-size: 3em;
+  line-height: 1em;
+
+}
+
+#settings{
+
+  text-align: right;
+  padding: 20px 50px;
+  float: right;
+
+}
+
+#info{
+
+  float: left;
+  padding: 20px 50px;
+
+}
+
+a{
+  text-decoration: none;
+  color:aqua;
+}

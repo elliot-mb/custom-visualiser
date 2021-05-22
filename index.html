@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body id="body">
+    
+    <div id="settings">
+
+      <h1 id="settings_title">settings</h1>
+
+      <label>smoothing:</label>
+      <input type="text" id="smooth" placeholder="around 0.5"><br>
+      <label>bins:</label>
+      <input type="text" id="bins" placeholder="whole number typically 9-11"><br>
+      <label>amplitude:</label>
+      <input type="text" id="amp" placeholder="0-1"><br>
+      <label>bars:</label>
+      <input type="text" id="bars" placeholder="frequency bands to display"><br>
+      <label>factor:</label>
+      <input type="text" id="fact" placeholder="typically 150-250"><br>
+      <label>radius:</label>
+      <input type="text" id="radius" placeholder="typically 350-700"><br>
+      <label>exponent:</label>
+      <input type="text" id="exp" placeholder="typically 1-3"><br>
+      <label>stroke:</label>
+      <input type="text" id="stroke" placeholder="typically 1-10"><br>
+      <label>bass affinity:</label>
+      <input type="text" id="affinity" placeholder="typically close to 1"><br>
+      <label>colour:</label>
+      <input type="text" id="colour" placeholder="enter a hex value including #"><br>
+
+      <input type="submit" value="get visualiser" id="get_visualiser" onclick="handleSubmit()"/>
+
+    </div>
+
+    <div id="info">
+
+      <h1>usage and about the program</h1>
+      <h2>settings things up</h2>
+      <p>fill out every settings field, else the visualiser will not generate</p>
+      <h2>once the visualiser generates...</h2>
+      <p>click the screen to start/pause the preloaded song<br>
+      use the file browser to upload your own song, then click to play it<br>
+      press any key to toggle the file browser button</p>
+      <h2>this software was made with p5.js (and p5.sound)</h2>
+      <p>p5.js is a powerful visual javascript library with a lot of functionality<br>
+      if you're interested in javascript and all things visually interesting, it could be worth checking out</p>
+      <h2><a href="repo.com">source code</a> for this website</h2>
+
+      <hr>
+
+      <h1>information on settings</h1>
+      <h2>smoothing</h2>
+      <p>strength of averaging between amplitudes of different frequency bands (has the effect of making it more reactive for lower numbers and less for higher)</p>
+      <h2>bins</h2>
+      <p>bins are input as a power of 2 (e.g. input 10 gives 2^10 bins [1024])<br>
+      FFT analyzes a very short snapshot of sound called a sample buffer; it returns an array of amplitude measurements, referred to as bins</p>
+      <h2>amplitude</h2>
+      <p>relative volume of the analysed audio</p>
+      <h2>bars</h2>
+      <p>number of frequency bands or bins displayed around the visualiser</p>
+      <h2>radius</h2>
+      <p>radius of the centre circle in pixels, play around with it to see what looks</p>
+      <h2>factor</h2>
+      <p>how many pixels a bin of full volume extends from the edge of the centre circle<br>
+      recommended value of around 350 for 1080p monitors for exponents close to 1
+      </p>
+      <h2>exponent</h2>
+      <p>essentially how exaggerated the graph is<br>
+      specifically (volume per frequency band ^ exp) / (max volume ^ exp )<br>
+      higher powers look better with higher factors as this keeps quieter frequencies at a sensible amplitude
+      </p>
+      <h2>stroke</h2>
+      <p>thickness of the radial bars on the visualiser, often set higher for lower inputs of bars</p>
+      <h2>bass affinity</h2>
+      <p>how much the visualiser changes size depending on the volume of bassier frequencies</p>
+      <h2>colour</h2>
+      <p>the colour of the centre circle</p>
+
+    </div>
+
+  </body>
+</html>
