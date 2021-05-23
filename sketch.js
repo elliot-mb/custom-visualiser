@@ -1,4 +1,6 @@
 let smoothing, bins, amplitude, bars, factor, radius, exponent, strokeWidth, affinity, colour; //locally stored values
+let frameID = 0; //counter for animating the loading animation when a new song is uploaded
+let ctx; //global canvas
 
 function preload(){
 
@@ -7,11 +9,12 @@ function preload(){
     inputElement.onchange = function(event){
             
         let fileList = inputElement.files;
-    
+        
+        frameID = 0;
         sound.stop();
         sound = loadSound(fileList[fileList.length-1]);
         sound.amp(parseFloat(amplitude));
-        console.log("loggers");
+        //console.log("loggers");
         //load sound
 
         //console.log(sound);
@@ -44,8 +47,8 @@ function getStorage(){
 }
 
 function setup(){
-    let cnv = createCanvas(window.innerWidth,window.innerHeight);
-    cnv.mouseClicked(togglePlay);
+    ctx = createCanvas(window.innerWidth,window.innerHeight);
+    ctx.mouseClicked(togglePlay);
     fft = new p5.FFT(smoothing, bins);
     sound.amp(parseFloat(amplitude));
 }
@@ -110,8 +113,17 @@ function draw(){
     }
     endShape();
 
+    if(!sound.isLoaded()){loading();}
 }
   
+function loading(){
+    stroke(255);
+    strokeWeight(10);
+    arc(window.innerWidth/2, window.innerHeight/2, radius*2, radius*2, Math.sin(frameID/50)*2+frameID/10, frameID/10+Math.PI);
+    noFill();
+    frameID++;
+}
+
 function togglePlay() {
     if (sound.isPlaying()) {
       sound.pause();
