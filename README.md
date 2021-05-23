@@ -4,4 +4,7 @@ just supply your own audio files and away you go!\
 fiddle around with the settings and see what looks good to you\
 [deployment](https://elliotsemicolon.github.io/custom-visualiser/)
 
-https://user-images.githubusercontent.com/45922387/119244397-3a0f3480-bb68-11eb-9a2f-0f3934d77ed4.mp4
+## example setup 
+![ezgif-2-7615ce2da058](https://user-images.githubusercontent.com/45922387/119244415-6dea5a00-bb68-11eb-8152-47dd370cb96a.gif)
+![image](https://user-images.githubusercontent.com/45922387/119244423-7cd10c80-bb68-11eb-9e3b-ef1165949cb2.png)
+
