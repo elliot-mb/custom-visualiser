@@ -113,10 +113,10 @@ function draw(){
     }
     endShape();
 
-    if(!sound.isLoaded()){loading();}
+    if(!sound.isLoaded()){loading(radius * (1 + bass/510));}
 }
   
-function loading(){
+function loading(radius){
     stroke(255);
     strokeWeight(10);
     arc(window.innerWidth/2, window.innerHeight/2, radius*2, radius*2, Math.sin(frameID/50)*2+frameID/10, frameID/10+Math.PI);
