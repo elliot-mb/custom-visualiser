@@ -74,3 +74,18 @@ function rhythmic(){
     document.getElementById('colour').value = "#ff3300";
 
 }
+
+function minimal(){
+
+    document.getElementById('smooth').value = 0.7;
+    document.getElementById('bins').value = 11;
+    document.getElementById('amp').value = 0.5;
+    document.getElementById('bars').value = 950;
+    document.getElementById('fact').value = 550;
+    document.getElementById('radius').value = 120;
+    document.getElementById('exp').value = 1.2;
+    document.getElementById('stroke').value = 2;
+    document.getElementById('affinity').value = 1.75;
+    document.getElementById('colour').value = "#bb5a2f";
+
+}
