@@ -67,7 +67,7 @@ function rhythmic(){
     document.getElementById('amp').value = 0.35;
     document.getElementById('bars').value = 250;
     document.getElementById('fact').value = 300;
-    document.getElementById('radius').value = 275;
+    document.getElementById('radius').value = 200;
     document.getElementById('exp').value = 1.5;
     document.getElementById('stroke').value = 1.5;
     document.getElementById('affinity').value = 0.1;
