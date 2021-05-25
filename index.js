@@ -29,3 +29,19 @@ function handleSubmit(){
 
     return;
 }
+
+function EDM(){
+
+    document.getElementById('smooth').value = 0.5;
+    document.getElementById('bins').value = 11
+    document.getElementById('amp').value = 0.5
+    document.getElementById('bars').value = 75;
+    document.getElementById('fact').value = 500
+    document.getElementById('radius').value = 200
+    document.getElementById('exp').value = 5
+    document.getElementById('stroke').value = 5
+    document.getElementById('affinity').value = 1
+    document.getElementById('colour').value = "#ee44ee";
+
+
+}

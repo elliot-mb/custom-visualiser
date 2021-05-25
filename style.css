@@ -30,7 +30,7 @@ input {
   border-radius: 20px;
 }
 
-#get_visualiser{
+.submit_settings{
 
   float: right;
 
@@ -48,6 +48,15 @@ h1{
   text-align: right;
   padding: 20px 50px;
   float: right;
+
+}
+
+#presets{
+
+  float: right;
+  padding: 20px 50px;
+  text-align: right;
+  position: relative;
 
 }
 
