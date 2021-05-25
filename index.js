@@ -45,7 +45,7 @@ function EDM(){
 
 }
 
-function Classical(){
+function classical(){
 
     document.getElementById('smooth').value = 0.65;
     document.getElementById('bins').value = 11;
@@ -57,5 +57,20 @@ function Classical(){
     document.getElementById('stroke').value = 3;
     document.getElementById('affinity').value = 0.1;
     document.getElementById('colour').value = "#3344ff";
+
+}
+
+function rhythmic(){
+
+    document.getElementById('smooth').value = 0.7;
+    document.getElementById('bins').value = 10;
+    document.getElementById('amp').value = 0.35;
+    document.getElementById('bars').value = 250;
+    document.getElementById('fact').value = 300;
+    document.getElementById('radius').value = 275;
+    document.getElementById('exp').value = 1.5;
+    document.getElementById('stroke').value = 1.5;
+    document.getElementById('affinity').value = 0.1;
+    document.getElementById('colour').value = "#ff3300";
 
 }
