@@ -54,7 +54,7 @@ function Classical(){
     document.getElementById('fact').value = 200;
     document.getElementById('radius').value = 150;
     document.getElementById('exp').value = 2.5;
-    document.getElementById('stroke').value = 5;
+    document.getElementById('stroke').value = 3;
     document.getElementById('affinity').value = 0.1;
     document.getElementById('colour').value = "#3344ff";
 
