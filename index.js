@@ -33,15 +33,29 @@ function handleSubmit(){
 function EDM(){
 
     document.getElementById('smooth').value = 0.5;
-    document.getElementById('bins').value = 11
-    document.getElementById('amp').value = 0.5
+    document.getElementById('bins').value = 11;
+    document.getElementById('amp').value = 0.5;
     document.getElementById('bars').value = 75;
-    document.getElementById('fact').value = 500
-    document.getElementById('radius').value = 200
-    document.getElementById('exp').value = 5
-    document.getElementById('stroke').value = 5
-    document.getElementById('affinity').value = 1
+    document.getElementById('fact').value = 500;
+    document.getElementById('radius').value = 150;
+    document.getElementById('exp').value = 5;
+    document.getElementById('stroke').value = 5;
+    document.getElementById('affinity').value = 1;
     document.getElementById('colour').value = "#ee44ee";
 
+}
+
+function Classical(){
+
+    document.getElementById('smooth').value = 0.65;
+    document.getElementById('bins').value = 11;
+    document.getElementById('amp').value = 0.5;
+    document.getElementById('bars').value = 125;
+    document.getElementById('fact').value = 200;
+    document.getElementById('radius').value = 150;
+    document.getElementById('exp').value = 2.5;
+    document.getElementById('stroke').value = 5;
+    document.getElementById('affinity').value = 0.1;
+    document.getElementById('colour').value = "#3344ff";
 
 }
