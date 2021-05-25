@@ -34,7 +34,7 @@ function EDM(){
 
     document.getElementById('smooth').value = 0.5;
     document.getElementById('bins').value = 11;
-    document.getElementById('amp').value = 0.5;
+    document.getElementById('amp').value = 0.4;
     document.getElementById('bars').value = 75;
     document.getElementById('fact').value = 500;
     document.getElementById('radius').value = 150;
