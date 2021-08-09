@@ -10,4 +10,4 @@ Using the EDM preset.
 
 ## How it works
 Surface-level overview of how the visualiser works.
-![fft](https://user-images.githubusercontent.com/45922387/128699557-5b17997c-a1fd-4bc3-a7c3-73b41cda6baf.png)
+![fft(2)](https://user-images.githubusercontent.com/45922387/128700034-1422ea53-bba1-42a3-90e3-cc2698ef1a4d.png)
